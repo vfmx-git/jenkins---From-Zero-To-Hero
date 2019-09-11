@@ -6,9 +6,8 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - "$PWD/jenkins_home:/var/jenkins_home"
+      - "/home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins_home:/var/jenkins_home"
     networks:
       - net
 networks:
   net:
-        
