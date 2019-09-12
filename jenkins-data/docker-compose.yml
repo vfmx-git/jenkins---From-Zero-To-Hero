@@ -9,5 +9,21 @@ services:
       - "/home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/jenkins_home:/var/jenkins_home"
     networks:
       - net
+  remote_host:
+    container_name: remote-host
+    image: remote-host
+    build:
+      context: /home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/centos7
+    networks:
+       - net
+  db_host:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      - "MYSQL_ROOT_PASSWORD=12345678"
+    volumes:
+      - "/home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/db-data:/var/lib/mysql"
+    networks:
+      - net
 networks:
   net:
