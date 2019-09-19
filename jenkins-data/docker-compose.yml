@@ -2,7 +2,9 @@ version: '3'
 services:
   jenkins:
     container_name: jenkins
-    image: jenkins/jenkins
+    image: jenkins-ansible
+    build:
+      context: jenkins-ansible
     ports:
       - "8080:8080"
     volumes:
@@ -14,6 +16,8 @@ services:
     image: remote-host
     build:
       context: /home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/centos7
+    volumes:
+      - "/home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/aws-s3.sh:/tmp/script1.sh"
     networks:
        - net
   db_host:
@@ -22,7 +26,16 @@ services:
     environment:
       - "MYSQL_ROOT_PASSWORD=12345678"
     volumes:
-      - "/home/mint-2/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/db-data:/var/lib/mysql"
+      - "~/Документы/COURSES/jenkins-FromZeroToHero/jenkins-data/db-data:/var/lib/mysql"
+    networks:
+      - net
+  web:
+    container_name: web
+    image: ansible-web
+    build:
+      context: jenkins-ansible/web
+    ports:
+      - "81:80"
     networks:
       - net
 networks:
