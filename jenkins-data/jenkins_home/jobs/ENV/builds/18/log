@@ -1,0 +1,44 @@
+Started by user [8mha:////4EJ3NpHAw0SIsS6gvPDkNWOLNsFY5O2NCoiNCJgTBf1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZu/dLi1CL9xJTczDwAS4B5WsAAAAA=[0mAdmin Adminovich
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins6058840777651361753.sh
++ echo Build number for this is 18
+Build number for this is 18
++ echo Build ID is 18
+Build ID is 18
++ echo Build url is http://jenkins.local:8080/job/ENV/18/
+Build url is http://jenkins.local:8080/job/ENV/18/
++ echo Job name is ENV
+Job name is ENV
++ echo **************************************
+**************************************
++ echo Course name is Jenkins-to-Hero
+Course name is Jenkins-to-Hero
++ echo Country name is Columbia
+Country name is Columbia
++ echo2
+/tmp/jenkins6058840777651361753.sh: 9: /tmp/jenkins6058840777651361753.sh: echo2: not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: vfmx@inbox.lv
+ERROR: 530 Authentication required
+
+com.sun.mail.smtp.SMTPSendFailedException: 530 Authentication required
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2057)
+	at com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1580)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1097)
+	at javax.mail.Transport.send0(Transport.java:195)
+	at javax.mail.Transport.send(Transport.java:124)
+	at hudson.tasks.MailSender.run(MailSender.java:130)
+	at hudson.tasks.Mailer.perform(Mailer.java:175)
+	at hudson.tasks.Mailer.perform(Mailer.java:138)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1840)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

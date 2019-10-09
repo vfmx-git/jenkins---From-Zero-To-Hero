@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-09-24 13:24:54.907 UTC</timestamp>
+  <md5sum>73bc9f85b10e892f7f684a1d7cfe0f89</md5sum>
+  <fileName>Credential id=gitlab_user name=bulava/******</fileName>
+  <usages>
+    <entry>
+      <string>maven-job</string>
+      <ranges>14-15</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,17 @@
+Started by user [8mha:////4CdK59lJGSlTd2u3lnd3d37/3XQOtaxCfLZTfllmMMg+AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYu/dLi1CL9zLLEPADyDQzEvwAAAA==[0mDubina
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ansible-users-db
+[ansible-users-db] $ ansible-playbook /var/jenkins_home/ansible/people.yml -i /var/jenkins_home/ansible/hosts -f 5 -e PEOPLE_AGE=23
+
+PLAY [web1] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [web1][0m
+
+TASK [Tranfer template to web server] ******************************************
+[0;32mok: [web1][0m
+
+PLAY RECAP *********************************************************************
+[0;32mweb1[0m                       : [0;32mok=2   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS

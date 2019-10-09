@@ -1,0 +1,19 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins816712987998805472.sh
++ echo Build number for this is 6
+Build number for this is 6
++ echo Build ID is 6
+Build ID is 6
++ echo Build url is http://jenkins.local:8080/job/ENV/6/
+Build url is http://jenkins.local:8080/job/ENV/6/
++ echo Job name is ENV
+Job name is ENV
++ echo **************************************
+**************************************
++ echo Course name is Jenkins-to-Hero
+Course name is Jenkins-to-Hero
++ echo Country name is Columbia
+Country name is Columbia
+Finished: SUCCESS

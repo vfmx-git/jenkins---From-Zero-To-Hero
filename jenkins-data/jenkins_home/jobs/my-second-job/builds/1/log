@@ -1,0 +1,8 @@
+Started by user [8mha:////4EJ3NpHAw0SIsS6gvPDkNWOLNsFY5O2NCoiNCJgTBf1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZu/dLi1CL9xJTczDwAS4B5WsAAAAA=[0mAdmin Adminovich
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/my-second-job
+[my-second-job] $ /bin/sh -xe /tmp/jenkins7206360294114896585.sh
++ /tmp/script1.sh John Connor
+/tmp/script1.sh: 1: /tmp/script1.sh: !#/bin/bash: not found
+Hello, John Connor!
+Finished: SUCCESS
